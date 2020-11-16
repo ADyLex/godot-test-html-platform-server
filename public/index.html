@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>ADyLex Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id ="header">
+        <center>
+            <h1 id="header2">ยินดีต้อนรับสู่เกม อดิเรก</h1>
+        </center>
+        </div>
+        
+        <center>
+        <button id="button" 
+        onclick="document.location='MemoryGame.html'">Click Here!</button>
+        <div id="response"></div>
+        <script src = "server.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $('#button').click(function() {
+                // run an AJAX get request to the route you setup above...
+                // respect the cross-domain policy by using the same domain
+                // you used to access your index.html file!
+                $.get('http://www.yoursite.com/request', function(list) {
+                    $('#response').html(list); // show the list
+                });
+            });
+        });
+        
+        
+        </script>
+        </center>
+    </body>
+</html>
