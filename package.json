@@ -6,10 +6,14 @@
 		"start": "node app.js"
 	},
 	"dependencies": {
-		"express": "4.15.2"
+		"express": "4.15.2",
+		"open": "^7.3.0"
 	},
 	"repository": {},
 	"engines": {
 		"node": "9.7.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.6"
 	}
 }

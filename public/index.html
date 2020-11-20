@@ -16,12 +16,15 @@
         <div id="response"></div>
         <script src = "server.js"></script>
         <script type="text/javascript">
+
+
         $(document).ready(function() {
             $('#button').click(function() {
                 // run an AJAX get request to the route you setup above...
                 // respect the cross-domain policy by using the same domain
                 // you used to access your index.html file!
-                $.get('http://www.yoursite.com/request', function(list) {
+                $.get(`http://localhost:${9000}/request`, {app: ['Microsoft Edge', '--incognito']}, function(list) { 
+                //'http://www.yoursite.com/request'
                     $('#response').html(list); // show the list
                 });
             });

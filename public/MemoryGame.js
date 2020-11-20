@@ -18,6 +18,7 @@ if (typeof exports === 'object' && typeof module === 'object')
       define([], function() { return Godot; });
     else if (typeof exports === 'object')
       exports["Godot"] = Godot;
+
     
 var Preloader = /** @constructor */ function() {
 
